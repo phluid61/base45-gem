@@ -14,6 +14,8 @@ Usage
 
 Encodes a string in Base45.
 
+| Item    |                 | Description              |
+| ------- | --------------- | ------------------------ |
 | @param  | \[String] bytes | the string to be encoded |
 | @return | \[String]       | a Base45-encoded string  |
 
@@ -27,6 +29,8 @@ Base45::encode("Hello!!")  #=> "%69 VD92EX0"
 
 Decodes a Base45-encoded string.
 
+| Item    |                 | Description                           |
+| ------- | --------------- | ------------------------------------- |
 | @param  | \[String] b45 | the Base45-encoded string to be decoded |
 | @return | \[String]     | the decoded bytes, as a string          |
 
