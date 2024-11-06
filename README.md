@@ -5,7 +5,7 @@ Base45
 
 A module that can Encode/Decode a string in Base45.
 
-See: <https://datatracker.ietf.org/doc/draft-faltstrom-base45>
+See: <https://datatracker.ietf.org/doc/rfc9285/>
 
 Usage
 -----
