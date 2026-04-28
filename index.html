@@ -2,31 +2,75 @@
 layout: default
 title: "Base45"
 ---
-<h1>Base45</h1>
-<p><a href="code_of_conduct.html"><img src="https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.svg" alt="Contributor Covenant" /></a></p>
+<h1><a href="#base45" aria-hidden="true" class="anchor" id="base45"></a>Base45</h1>
+<p><a href="http://badge.fury.io/rb/base45"><img src="https://badge.fury.io/rb/base45.png" alt="Gem Version" /></a>
+<a href="code_of_conduct.html"><img src="https://img.shields.io/badge/Contributor%20Covenant-v3.0%20adopted-ff69b4.svg" alt="Contributor Covenant" /></a></p>
 <p>A module that can Encode/Decode a string in Base45.</p>
 <p>See: <a href="https://datatracker.ietf.org/doc/rfc9285/">https://datatracker.ietf.org/doc/rfc9285/</a></p>
-<h2>Usage</h2>
-<h3>Base45::encode(bytes)</h3>
+<h2><a href="#usage" aria-hidden="true" class="anchor" id="usage"></a>Usage</h2>
+<h3><a href="#base45encodebytes" aria-hidden="true" class="anchor" id="base45encodebytes"></a>Base45::encode(bytes)</h3>
 <p>Encodes a string in Base45.</p>
-<p>| Item    |                 | Description              |
-| ------- | --------------- | ------------------------ |
-| @param  | [String] bytes | the string to be encoded |
-| @return | [String]       | a Base45-encoded string  |</p>
-<pre><code class="language-ruby">require 'base45'
-
-Base45::encode(&quot;Hello!!&quot;)  #=&gt; &quot;%69 VD92EX0&quot;
-</code></pre>
-<h3>Base45::decode(b45)</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@param</td>
+<td><span data-escaped-char>[</span>String] bytes</td>
+<td>the string to be encoded</td>
+</tr>
+<tr>
+<td>@return</td>
+<td><span data-escaped-char>[</span>String]</td>
+<td>a Base45-encoded string</td>
+</tr>
+</tbody>
+</table>
+<pre lang="ruby" style="background-color:#2b303b;"><code><span style="color:#8fa1b3;">require </span><span style="color:#c0c5ce;">&#39;</span><span style="color:#a3be8c;">base45</span><span style="color:#c0c5ce;">&#39;
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#ebcb8b;">Base45</span><span style="color:#c0c5ce;">::encode(&quot;</span><span style="color:#a3be8c;">Hello!!</span><span style="color:#c0c5ce;">&quot;)  </span><span style="color:#65737e;">#=&gt; &quot;%69 VD92EX0&quot;
+</span></code></pre>
+<h3><a href="#base45decodeb45" aria-hidden="true" class="anchor" id="base45decodeb45"></a>Base45::decode(b45)</h3>
 <p>Decodes a Base45-encoded string.</p>
-<p>| Item    |                 | Description                           |
-| ------- | --------------- | ------------------------------------- |
-| @param  | [String] b45 | the Base45-encoded string to be decoded |
-| @return | [String]     | the decoded bytes, as a string          |</p>
-<pre><code class="language-ruby">require 'base45'
-
-Base45::decode(&quot;QED8WEX0&quot;)  #=&gt; &quot;ietf!&quot;
-</code></pre>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@param</td>
+<td><span data-escaped-char>[</span>String] b45</td>
+<td>the Base45-encoded string to be decoded</td>
+</tr>
+<tr>
+<td>@return</td>
+<td><span data-escaped-char>[</span>String]</td>
+<td>the decoded bytes, as a string</td>
+</tr>
+</tbody>
+</table>
+<pre lang="ruby" style="background-color:#2b303b;"><code><span style="color:#8fa1b3;">require </span><span style="color:#c0c5ce;">&#39;</span><span style="color:#a3be8c;">base45</span><span style="color:#c0c5ce;">&#39;
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#ebcb8b;">Base45</span><span style="color:#c0c5ce;">::decode(&quot;</span><span style="color:#a3be8c;">QED8WEX0</span><span style="color:#c0c5ce;">&quot;)  </span><span style="color:#65737e;">#=&gt; &quot;ietf!&quot;
+</span></code></pre>
+<h2><a href="#contributing" aria-hidden="true" class="anchor" id="contributing"></a>Contributing</h2>
+<p>We require all contributors to comply with the <a href="https://developercertificate.org/">Developer Certificate of Origin</a>. This ensures that all contributions are properly licensed and attributed.</p>
+<h3><a href="#contributor-code-of-conduct" aria-hidden="true" class="anchor" id="contributor-code-of-conduct"></a>Contributor Code of Conduct</h3>
+<p>This repository is subject to a <a href="code_of_conduct.html">Contributor Code of Conduct</a>
+adapted from the <a href="https://www.contributor-covenant.org">Contributor Covenant</a>, version 3.0, available at
+<a href="https://www.contributor-covenant.org/version/3/0/">https://www.contributor-covenant.org/version/3/0/</a></p>
+<h2><a href="#licence" aria-hidden="true" class="anchor" id="licence"></a>Licence</h2>
+<p>This project is licensed under the ISC licence. See <a href="LICENSE">LICENSE</a>
+for details</p>
 <pre id="license" class="no-highlight">Copyright (c) 2022, Matthew Kerwin &lt;matthew@kerwin.net.au&gt;
 
 Permission to use, copy, modify, and/or distribute this software for any

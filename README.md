@@ -1,7 +1,7 @@
-Base45
-======
+# Base45
 
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.svg)](code_of_conduct.md)
+[![Gem Version](https://badge.fury.io/rb/base45.png)](http://badge.fury.io/rb/base45)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v3.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 
 A module that can Encode/Decode a string in Base45.
 
@@ -39,4 +39,25 @@ require 'base45'
 
 Base45::decode("QED8WEX0")  #=> "ietf!"
 ```
+
+
+## Contributing
+
+We require all contributors to comply with the [Developer Certificate of Origin](https://developercertificate.org/). This ensures that all contributions are properly licensed and attributed.
+
+
+### Contributor Code of Conduct
+
+This repository is subject to a [Contributor Code of Conduct](code_of_conduct.md)
+adapted from the [Contributor Covenant][cc], version 3.0, available at
+<https://www.contributor-covenant.org/version/3/0/>
+
+
+[cc]: https://www.contributor-covenant.org
+
+
+## Licence
+
+This project is licensed under the ISC licence. See [LICENSE](LICENSE)
+for details
 
